@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply bg-white rounded-lg shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:scale-105;
+  }
+  
+  .btn {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-tonic-green text-white hover:bg-tonic-green/90;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-tonic-green text-tonic-green hover:bg-tonic-green hover:text-white;
+  }
+} 
