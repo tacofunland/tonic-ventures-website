@@ -5,24 +5,19 @@ Fenyx – helps companies easily get rid of used office furniture.
 
 Tonic Spaces – enables companies to buy sustainable secondhand office furniture.
 
-The landing page should:
+The landing page uses a four-quarter layout design with specific content in each quarter:
 
-Prominently display the Tonic Ventures logo at the top (use placeholder if necessary).
+Top Left: Dynamic date/time display
+Top Right: Main headline and navigation links
+Bottom Left: TONIC VENTURES logo
+Bottom Right: Background image of a modern office space
 
-Feature a clear, central headline:
-"Building the leading platform for sustainable office transformations in Europe."
-
-Include two distinct and elegant buttons or call-to-action cards that guide visitors to:
-
-Fenyx
-
-Tonic Spaces
-
-Maintain visual harmony with minimalist layout, plenty of white space, soft natural colors, and subtle animations or transitions (if applicable).
-
-The page should look like a well-crafted intro to the ecosystem, giving the sense of vision and cohesion between the two brands without overwhelming the user with content.
-
-Ensure responsiveness and visual appeal across devices.
+The page should:
+- Maintain visual harmony with minimalist layout
+- Use plenty of white space
+- Feature soft natural colors
+- Include subtle animations or transitions
+- Be fully responsive across all devices
 
 # 1. Project Setup ✅
 ## 1.1 Repository Structure
@@ -74,18 +69,20 @@ www -> tacofunland.github.io
 * Soft natural colors, white space, minimal layout
 * TailwindCSS for all styling
 * Hover effects and transitions for interactivity
+* Four-quarter layout design
+* Mobile-first responsive design
 
 ## 3.2 Layout ✅
-* **Top:** Tonic Ventures logo
-* **Headline:** "Building the leading platform for sustainable office transformations in Europe."
-* **Two CTA cards:**
-   * **Fenyx** – "Make used office furniture disappear."
-   * **Tonic Spaces** – "Buy beautiful, sustainable secondhand furniture."
+* **Top Left:** Dynamic date/time display
+* **Top Right:** Main headline and navigation links
+* **Bottom Left:** TONIC VENTURES logo
+* **Bottom Right:** Background image of a modern office space
 
 ## 3.3 Responsiveness ✅
 * Mobile-first design
 * Responsive on all devices
 * Smooth transitions
+* Optimized quarter heights and spacing for mobile
 
 # 4. Tech Stack ✅
 ## 4.1 Technologies

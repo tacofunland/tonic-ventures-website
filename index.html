@@ -4,50 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tonic Ventures - Sustainable Office Transformations</title>
-    <script type="module" src="/src/styles.css"></script>
+    <link rel="stylesheet" href="/src/styles.css">
     <meta name="description" content="Tonic Ventures - Building the leading platform for sustainable office transformations in Europe">
 </head>
-<body class="h-full">
-    <div class="quarter-layout">
-        <!-- Top Left Quarter -->
-        <div class="quarter top-left">
-            <div class="date-display" id="dateDisplay">
-                <div class="date"></div>
-                <div class="time"></div>
+<body class="min-h-full">
+    <main class="min-h-screen">
+        <div class="quarter-layout h-full md:h-screen">
+            <!-- Top Left Quarter -->
+            <div class="quarter top-left">
+                <div class="date-display" id="dateDisplay">
+                    <div class="date"></div>
+                    <div class="time"></div>
+                </div>
             </div>
-        </div>
 
-        <!-- Top Right Quarter -->
-        <div class="quarter top-right">
-            <div>
-                <p class="headline">Building the leading platform for sustainable office transformations in Europe.</p>
-                <div class="links-list">
-                    <div>
-                        <a href="#" class="nav-link">Fenyx</a>
-                        <p class="text-sm mt-1">Make used office furniture disappear.</p>
-                    </div>
-                    <div>
-                        <a href="#" class="nav-link">Tonic Spaces</a>
-                        <p class="text-sm mt-1">Buy beautiful, sustainable secondhand furniture.</p>
+            <!-- Top Right Quarter -->
+            <div class="quarter top-right">
+                <div>
+                    <p class="headline">Building the leading platform for sustainable office transformations in Europe.</p>
+                    <div class="links-list">
+                        <div>
+                            <h2 class="nav-title">Fenyx</h2>
+                            <a href="https://fenyx-office.com" class="nav-link" target="_blank" rel="noopener noreferrer">fenyx-office.com</a>
+                        </div>
+                        <div>
+                            <h2 class="nav-title">Tonic Spaces</h2>
+                            <a href="https://tonicspaces.com" class="nav-link" target="_blank" rel="noopener noreferrer">tonicspaces.com</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Bottom Left Quarter -->
-        <div class="quarter bottom-left">
-            <div class="logo">TONIC VENTURES</div>
-        </div>
+            <!-- Bottom Left Quarter -->
+            <div class="quarter bottom-left">
+                <div class="logo">TONIC VENTURES</div>
+            </div>
 
-        <!-- Bottom Right Quarter -->
-        <div class="quarter bottom-right">
-            <img src="https://cdn.prod.website-files.com/6437c447a126d102bdd663e6/643ece741f26255f2cabb4b8_florian-wehde-1uWanmgkd5g-unsplash-min.jpg" 
-                 alt="Modern Office Space" 
-                 class="placeholder-image"
-                 loading="lazy"
-                 fetchpriority="low">
+            <!-- Bottom Right Quarter -->
+            <div class="quarter bottom-right">
+                <img src="https://cdn.prod.website-files.com/6437c447a126d102bdd663e6/643ece741f26255f2cabb4b8_florian-wehde-1uWanmgkd5g-unsplash-min.jpg" 
+                     alt="Modern Office Space" 
+                     class="placeholder-image"
+                     loading="lazy"
+                     fetchpriority="low">
+            </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="py-8 text-center border-t border-black/10">
+        <div class="max-w-xl mx-auto px-8">
+            <h2 class="text-sm text-black opacity-50 mb-6">Imprint</h2>
+            <div class="text-sm space-y-6 opacity-75">
+                <div>
+                    <p>Tonic Ventures UG</p>
+                    <p>Möckernstraße 120</p>
+                    <p>10963 Berlin</p>
+                </div>
+                <div>
+                    <p>Telefon: <a href="tel:+4915158151635" class="hover:opacity-60">+49 1515 8151635</a></p>
+                    <p>E-Mail: <a href="mailto:info@tonic-ventures.com" class="hover:opacity-60">info@tonic-ventures.com</a></p>
+                </div>
+                <div>
+                    <p>Registergericht: Amtsgericht Charlottenburg</p>
+                    <p>Registernummer: HRB 270567 B</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Function to update date and time display

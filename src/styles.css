@@ -21,25 +21,72 @@
   }
 
   .quarter {
-    @apply p-8 md:p-12 flex flex-col min-h-[25vh] md:h-[50vh] md:min-h-0;
+    @apply p-6 md:p-12 flex flex-col;
   }
 
-  .quarter.top-left,
-  .quarter.top-right,
+  /* Mobile-first quarter ordering */
+  .quarter.top-left {
+    @apply order-1 md:order-1;
+    min-height: 15vh;
+  }
+
   .quarter.bottom-left {
-    @apply justify-start;
+    @apply order-2 md:order-3 justify-center;
+    min-height: 15vh;
+  }
+
+  .quarter.top-right {
+    @apply order-3 md:order-2;
+    min-height: auto;
+    padding-bottom: 2rem;
   }
 
   .quarter.bottom-right {
-    @apply relative overflow-hidden h-[50vh];
+    @apply order-4 md:order-4;
+    height: 40vh;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  /* Desktop layout */
+  @screen md {
+    .quarter-layout {
+      @apply grid-rows-2;
+      height: 100vh;
+    }
+
+    .quarter {
+      height: 50vh;
+      min-height: 50vh;
+      padding: 3rem;
+    }
+
+    .quarter.top-left {
+      @apply justify-start;
+    }
+
+    .quarter.top-right {
+      @apply justify-start;
+      padding-bottom: 3rem;
+    }
+
+    .quarter.bottom-left {
+      @apply justify-start;
+    }
+
+    .quarter.bottom-right {
+      height: 50vh;
+      min-height: 50vh;
+      padding: 0;
+    }
   }
 
   .logo {
-    @apply text-4xl md:text-6xl font-light tracking-wider;
+    @apply text-4xl md:text-6xl font-light tracking-wide;
   }
 
   .headline {
-    @apply text-xl md:text-2xl mb-8 font-light leading-relaxed;
+    @apply text-2xl md:text-3xl mb-6 md:mb-8 font-light leading-relaxed;
   }
 
   .date-display {
@@ -55,14 +102,38 @@
   }
 
   .links-list {
-    @apply space-y-4;
+    @apply space-y-4 md:space-y-6;
   }
 
   .nav-link {
-    @apply text-lg hover:opacity-60 transition-opacity duration-300;
+    @apply text-lg transition-opacity duration-300 border-b border-black pb-0.5;
+  }
+
+  .nav-link:hover {
+    @apply opacity-60;
+  }
+
+  .nav-title {
+    @apply text-lg font-medium mb-1;
   }
 
   .placeholder-image {
-    @apply absolute inset-0 w-full h-full object-cover object-center;
+    @apply w-full h-full object-cover object-center;
+    display: block;
+  }
+
+  /* Mobile Optimizations */
+  @screen sm {
+    .quarter {
+      @apply p-8;
+    }
+
+    .quarter.bottom-right {
+      padding: 0;
+    }
+
+    .links-list {
+      @apply mt-6 md:mt-12;
+    }
   }
 }
