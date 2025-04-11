@@ -1,5 +1,5 @@
 export default {
-  base: '',
+  base: '/',
   root: './',
   publicDir: 'public',
   build: {
@@ -8,4 +8,7 @@ export default {
     emptyOutDir: true,
     copyPublicDir: true
   },
+  css: {
+    postcss: './postcss.config.js'
+  }
 } 
